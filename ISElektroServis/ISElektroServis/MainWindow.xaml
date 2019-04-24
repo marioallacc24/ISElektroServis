@@ -22,8 +22,8 @@
             <RowDefinition Height="497*"/>
         </Grid.RowDefinitions>
 
-        
-            <Menu IsMainMenu="True">
+               
+            <Menu IsMainMenu="True" Grid.Column="0" >
                 <MenuItem Header="_Prijem">
                 <MenuItem Header="_U izradi">
                     <MenuItem.Icon>
@@ -41,18 +41,50 @@
                 </MenuItem>
             </MenuItem>
             <MenuItem Header="_Finasije">
-                <MenuItem Header="_Izrada fakture" InputGestureText="Ctrl+F">
+                <MenuItem Header="_Fakture">
                     <MenuItem.Icon>
                         <materialDesign:PackIcon
                             Kind="Table" />
                     </MenuItem.Icon>
+                    <MenuItem Header="_Izrada" InputGestureText="Ctrl+F">
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon
+                            Kind="Add" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="_Lista faktura" InputGestureText="Ctrl+F+L">
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon
+                            Kind="Table" />
+                        </MenuItem.Icon>
+                    </MenuItem>
                 </MenuItem>
-                <MenuItem Header="_Provera dugovanja" InputGestureText="Ctrl+D">
+
+                <MenuItem Header="_Klijenti">
                     <MenuItem.Icon>
                         <materialDesign:PackIcon
-                            Kind="Table" />
+                            Kind="People" />
                     </MenuItem.Icon>
+                    <MenuItem Header="_Dodaj klijenta" InputGestureText="Ctrl+K">
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon
+                            Kind="Add" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="_Lista klijenata" InputGestureText="Ctrl+K+L">
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon
+                            Kind="Table" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="_Provera dugovanja" InputGestureText="Ctrl+K+D">
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon
+                            Kind="Help" />
+                        </MenuItem.Icon>
+                    </MenuItem>
                 </MenuItem>
+                
                 <MenuItem Header="_Uplata" InputGestureText="Ctrl+U">
                     <MenuItem.Icon>
                         <materialDesign:PackIcon
@@ -94,7 +126,7 @@
             </MenuItem>
             <MenuItem x:Name="Menu_Izlaz" Header="_Izlaz" HorizontalAlignment="Right" Click="Menu_Izlaz_Click" />
         </Menu>
-
+        
         <Image Grid.Row="1" Source="resursi/logo.png" />
 
 
