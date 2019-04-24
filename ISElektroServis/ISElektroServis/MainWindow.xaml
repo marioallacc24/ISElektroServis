@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ISElektroServis"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
+        Title="IS Elekro Servis" Height="550" Width="800"
 
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
@@ -16,6 +16,83 @@
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="497*"/>
+        </Grid.RowDefinitions>
+
         
+            <Menu IsMainMenu="True">
+                <MenuItem Header="_Prijem">
+                <MenuItem Header="_U izradi">
+                    <MenuItem.Icon>
+                        <materialDesign:PackIcon
+                            Kind="Hammer" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+                <MenuItem Header="_Popravka">
+                <MenuItem Header="_U izradi">
+                    <MenuItem.Icon>
+                        <materialDesign:PackIcon
+                            Kind="Hammer" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="_Finasije">
+                <MenuItem Header="_Izrada fakture" InputGestureText="Ctrl+F">
+                    <MenuItem.Icon>
+                        <materialDesign:PackIcon
+                            Kind="Table" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="_Provera dugovanja" InputGestureText="Ctrl+D">
+                    <MenuItem.Icon>
+                        <materialDesign:PackIcon
+                            Kind="Table" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="_Uplata" InputGestureText="Ctrl+U">
+                    <MenuItem.Icon>
+                        <materialDesign:PackIcon
+                            Kind="HomeCurrencyUsd" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="_Nabavka">
+                <MenuItem Header="_U izradi">
+                    <MenuItem.Icon>
+                        <materialDesign:PackIcon
+                            Kind="Hammer" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+
+            <MenuItem Header="_Prozor">
+                <MenuItem Header="_Svetla tema">
+                    <MenuItem.Icon>
+                        <materialDesign:PackIcon
+                            Kind="CircleOutline" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="_Tamna tema">
+                    <MenuItem.Icon>
+                        <materialDesign:PackIcon
+                            Kind="CircleSlice8" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="_Paleta boja">
+                    <MenuItem Header="_U izradi">
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon
+                            Kind="Hammer" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem x:Name="Menu_Izlaz" Header="_Izlaz" HorizontalAlignment="Right" Click="Menu_Izlaz_Click" />
+        </Menu>
+        
+
     </Grid>
 </Window>
