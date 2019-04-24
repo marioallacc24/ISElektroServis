@@ -29,5 +29,17 @@ namespace ISElektroServis
         {
             System.Windows.Application.Current.Shutdown();
         }
+
+      
+
+        private void MenuSvetlaTema_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Resources.MergedDictionaries[1].Source = new Uri("pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml", UriKind.RelativeOrAbsolute);
+        }
+
+        private void MenuTamnaTema_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Resources.MergedDictionaries[1].Source = new Uri("pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Dark.xaml", UriKind.RelativeOrAbsolute);
+        }
     }
 }

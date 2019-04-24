@@ -68,14 +68,15 @@
                 </MenuItem>
             </MenuItem>
 
-            <MenuItem Header="_Prozor">
-                <MenuItem Header="_Svetla tema">
+            <MenuItem Header="_Prozor" >
+                <MenuItem Header="_Svetla tema"  x:Name="MenuSvetlaTema" Click="MenuSvetlaTema_Click">
                     <MenuItem.Icon>
                         <materialDesign:PackIcon
                             Kind="CircleOutline" />
                     </MenuItem.Icon>
                 </MenuItem>
-                <MenuItem Header="_Tamna tema">
+
+                <MenuItem x:Name="MenuTamnaTema" Header="_Tamna tema" Click="MenuTamnaTema_Click" >
                     <MenuItem.Icon>
                         <materialDesign:PackIcon
                             Kind="CircleSlice8" />
