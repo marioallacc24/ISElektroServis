@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="IS Elekro Servis" Height="550" Width="800"
 
+        WindowStartupLocation="CenterScreen"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"
@@ -93,7 +94,9 @@
             </MenuItem>
             <MenuItem x:Name="Menu_Izlaz" Header="_Izlaz" HorizontalAlignment="Right" Click="Menu_Izlaz_Click" />
         </Menu>
-        
+
+        <Image Grid.Row="1" Source="resursi/logo.png" />
+
 
     </Grid>
 </Window>
