@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ISElektroServis"
         mc:Ignorable="d"
-        Title="IS Elekro Servis" Height="550" Width="800"
+        Title="IS Elekro Servis" Height="550" Width="850"
 
         WindowStartupLocation="CenterScreen"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
@@ -21,7 +21,7 @@
             <RowDefinition Height="50*"/>
             <RowDefinition Height="497*"/>
         </Grid.RowDefinitions>
-
+ 
                
             <Menu IsMainMenu="True" Grid.Column="0" >
                 <MenuItem Header="_Prijem">
@@ -46,13 +46,13 @@
                         <materialDesign:PackIcon
                             Kind="Table" />
                     </MenuItem.Icon>
-                    <MenuItem Header="_Izrada" InputGestureText="Ctrl+F">
+                    <MenuItem x:Name="Menu_Faktura_Izrada" Header="_Izrada" InputGestureText="Ctrl+F" Click="Menu_Faktura_Izrada_Click">
                         <MenuItem.Icon>
                             <materialDesign:PackIcon
                             Kind="Add" />
                         </MenuItem.Icon>
                     </MenuItem>
-                    <MenuItem Header="_Lista faktura" InputGestureText="Ctrl+F+L">
+                    <MenuItem x:Name="Menu_Lista_faktura" Header="_Lista faktura" InputGestureText="Ctrl+F+L" Click="Menu_Lista_faktura_Click">
                         <MenuItem.Icon>
                             <materialDesign:PackIcon
                             Kind="Table" />
@@ -127,7 +127,13 @@
             <MenuItem x:Name="Menu_Izlaz" Header="_Izlaz" HorizontalAlignment="Right" Click="Menu_Izlaz_Click" />
         </Menu>
         
-        <Image Grid.Row="1" Source="resursi/logo.png" />
+        <Image x:Name="SlikaLogo" Grid.Row="1" Source="resursi/logo.png" />
+        
+        <local:IzradaFakture x:Name="IzradaFakture" Grid.Row="1" Visibility="Hidden"/>
+        <local:ListaFaktura x:Name="ListaFaktura" Grid.Row="1" Visibility="Hidden"/>
+
+
+
 
 
     </Grid>

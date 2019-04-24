@@ -41,5 +41,23 @@ namespace ISElektroServis
         {
             Application.Current.Resources.MergedDictionaries[1].Source = new Uri("pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Dark.xaml", UriKind.RelativeOrAbsolute);
         }
+
+        private void Menu_Faktura_Izrada_Click(object sender, RoutedEventArgs e)
+        {
+            
+            IzradaFakture.Visibility = Visibility.Visible;
+
+            SlikaLogo.Visibility = Visibility.Hidden;
+            ListaFaktura.Visibility = Visibility.Hidden;
+        }
+
+        private void Menu_Lista_faktura_Click(object sender, RoutedEventArgs e)
+        {
+            ListaFaktura.Visibility = Visibility.Visible;
+
+            SlikaLogo.Visibility = Visibility.Hidden;
+            IzradaFakture.Visibility = Visibility.Hidden;
+            
+        }
     }
 }
