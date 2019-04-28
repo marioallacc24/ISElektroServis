@@ -79,6 +79,9 @@
     <Compile Include="ProveraDugovanja.xaml.cs">
       <DependentUpon>ProveraDugovanja.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UpitProveraDugovanja.xaml.cs">
+      <DependentUpon>UpitProveraDugovanja.xaml</DependentUpon>
+    </Compile>
     <Page Include="DodajKlijenta.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -120,6 +123,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="ProveraDugovanja.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UpitProveraDugovanja.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ISElektroServis"
         mc:Ignorable="d"
-        Title="ProveraDugovanja" Height="300" Width="500"
+        Title="Provera dugovanja" Height="300" Width="500"
 
         WindowStartupLocation="CenterScreen"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
@@ -17,6 +17,8 @@
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}">
     <Grid>
-        
+
+        <local:UpitProveraDugovanja x:Name="upitProveraDugovanja" Visibility="Visible"/>
+
     </Grid>
 </Window>

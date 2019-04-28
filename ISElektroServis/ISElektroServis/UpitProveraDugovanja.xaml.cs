@@ -10,23 +10,21 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace ISElektroServis
 {
     /// <summary>
-    /// Interaction logic for ProveraDugovanja.xaml
+    /// Interaction logic for UpitProveraDugovanja.xaml
     /// </summary>
-    public partial class ProveraDugovanja : Window
+    public partial class UpitProveraDugovanja : UserControl
     {
-        public ProveraDugovanja()
+        public UpitProveraDugovanja()
         {
             InitializeComponent();
-            
         }
 
-       
-
-
+        
     }
 }
