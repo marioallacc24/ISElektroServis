@@ -76,6 +76,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="DodajKlijenta.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="IzradaFakture.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -91,6 +95,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DodajKlijenta.xaml.cs">
+      <DependentUpon>DodajKlijenta.xaml</DependentUpon>
     </Compile>
     <Compile Include="IzradaFakture.xaml.cs">
       <DependentUpon>IzradaFakture.xaml</DependentUpon>

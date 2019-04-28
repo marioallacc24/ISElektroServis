@@ -65,7 +65,7 @@
                         <materialDesign:PackIcon
                             Kind="People" />
                     </MenuItem.Icon>
-                    <MenuItem Header="_Dodaj klijenta" InputGestureText="Ctrl+K">
+                    <MenuItem x:Name="Menu_Dodaj_klijenta" Header="_Dodaj klijenta" InputGestureText="Ctrl+K" Click="Menu_Dodaj_klijenta_Click">
                         <MenuItem.Icon>
                             <materialDesign:PackIcon
                             Kind="Add" />
@@ -131,6 +131,7 @@
         
         <local:IzradaFakture x:Name="IzradaFakture" Grid.Row="1" Visibility="Hidden"/>
         <local:ListaFaktura x:Name="ListaFaktura" Grid.Row="1" Visibility="Hidden"/>
+        <local:DodajKlijenta x:Name="DodajKlijenta" Grid.Row="1" Visibility="Hidden"/>
 
 
 

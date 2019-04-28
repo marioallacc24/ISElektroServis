@@ -24,5 +24,24 @@ namespace ISElektroServis
         {
             InitializeComponent();
         }
+
+        public void ResetFields()
+        {
+            idKlijentaTextBox.Text = "";
+            imeKlijentaTextBox.Text = "";
+            adresaTextBox.Text = "";
+            pibTextBox.Text = "";
+            kontaktBrojTextBox.Text = "";
+            emailTextBox.Text = "";
+            datumDodavanja.SelectedDate = null;
+           
+
+
+        }
+
+        private void OcistiDugme_Click(object sender, RoutedEventArgs e)
+        {
+            ResetFields();
+        }
     }
 }
