@@ -77,7 +77,7 @@
                             Kind="Table" />
                         </MenuItem.Icon>
                     </MenuItem>
-                    <MenuItem Header="_Provera dugovanja" InputGestureText="Ctrl+K+D">
+                    <MenuItem x:Name="Menu_Provera_dugovanja" Header="_Provera dugovanja" InputGestureText="Ctrl+K+D" Click="Menu_Provera_dugovanja_Click">
                         <MenuItem.Icon>
                             <materialDesign:PackIcon
                             Kind="Help" />

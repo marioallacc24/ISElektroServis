@@ -86,6 +86,13 @@ namespace ISElektroServis
 
         }
 
+        private void Menu_Provera_dugovanja_Click(object sender, RoutedEventArgs e)
+        {
+            ProveraDugovanja proveraDugovanja = new ProveraDugovanja();
+            proveraDugovanja.Show();
+
+        }
+
 
     }
 }
