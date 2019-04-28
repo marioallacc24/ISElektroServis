@@ -50,6 +50,7 @@ namespace ISElektroServis
             SlikaLogo.Visibility = Visibility.Hidden;
             ListaFaktura.Visibility = Visibility.Hidden;
             DodajKlijenta.Visibility = Visibility.Hidden;
+            ListaKlijenta.Visibility = Visibility.Hidden;
         }
 
         private void Menu_Lista_faktura_Click(object sender, RoutedEventArgs e)
@@ -59,6 +60,7 @@ namespace ISElektroServis
             SlikaLogo.Visibility = Visibility.Hidden;
             IzradaFakture.Visibility = Visibility.Hidden;
             DodajKlijenta.Visibility = Visibility.Hidden;
+            ListaKlijenta.Visibility = Visibility.Hidden;
 
         }
 
@@ -66,6 +68,18 @@ namespace ISElektroServis
         {
             DodajKlijenta.Visibility = Visibility.Visible;
 
+            ListaFaktura.Visibility = Visibility.Hidden;
+            SlikaLogo.Visibility = Visibility.Hidden;
+            IzradaFakture.Visibility = Visibility.Hidden;
+            ListaKlijenta.Visibility = Visibility.Hidden;
+
+        }
+
+        private void Menu_Lista_klijenta_Click(object sender, RoutedEventArgs e)
+        {
+            ListaKlijenta.Visibility = Visibility.Visible;
+
+            DodajKlijenta.Visibility = Visibility.Hidden;
             ListaFaktura.Visibility = Visibility.Hidden;
             SlikaLogo.Visibility = Visibility.Hidden;
             IzradaFakture.Visibility = Visibility.Hidden;

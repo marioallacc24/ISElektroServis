@@ -71,7 +71,7 @@
                             Kind="Add" />
                         </MenuItem.Icon>
                     </MenuItem>
-                    <MenuItem Header="_Lista klijenata" InputGestureText="Ctrl+K+L">
+                    <MenuItem x:Name="Menu_Lista_klijenta" Header="_Lista klijenata" InputGestureText="Ctrl+K+L" Click="Menu_Lista_klijenta_Click">
                         <MenuItem.Icon>
                             <materialDesign:PackIcon
                             Kind="Table" />
@@ -132,6 +132,7 @@
         <local:IzradaFakture x:Name="IzradaFakture" Grid.Row="1" Visibility="Hidden"/>
         <local:ListaFaktura x:Name="ListaFaktura" Grid.Row="1" Visibility="Hidden"/>
         <local:DodajKlijenta x:Name="DodajKlijenta" Grid.Row="1" Visibility="Hidden"/>
+        <local:ListaKlijenta x:Name="ListaKlijenta" Grid.Row="1" Visibility="Hidden"/>
 
 
 
