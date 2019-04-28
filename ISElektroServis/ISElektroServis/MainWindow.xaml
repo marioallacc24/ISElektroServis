@@ -85,7 +85,7 @@
                     </MenuItem>
                 </MenuItem>
                 
-                <MenuItem Header="_Uplata" InputGestureText="Ctrl+U">
+                <MenuItem x:Name="Menu_Uplata" Header="_Uplata" InputGestureText="Ctrl+U" Click="Menu_Uplata_Click">
                     <MenuItem.Icon>
                         <materialDesign:PackIcon
                             Kind="HomeCurrencyUsd" />

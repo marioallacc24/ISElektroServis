@@ -93,6 +93,13 @@ namespace ISElektroServis
 
         }
 
+        private void Menu_Uplata_Click(object sender, RoutedEventArgs e)
+        {
+            Uplata uplata = new Uplata();
+            uplata.Show();
+
+        }
+
 
     }
 }
