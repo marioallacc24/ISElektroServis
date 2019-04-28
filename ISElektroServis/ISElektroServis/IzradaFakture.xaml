@@ -21,13 +21,13 @@
             <RowDefinition Height="90*"/>
         </Grid.RowDefinitions>
 
-        <TextBox Grid.Column="0" Grid.Row="0" FontSize="15" Margin="15" materialDesign:HintAssist.Hint="Broj fakture" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
-        <TextBox Grid.Column="1" Grid.Row="0" FontSize="15" Margin="15" materialDesign:HintAssist.Hint="ID Klijent" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
-        <TextBox Grid.Column="2" Grid.Row="0" FontSize="15" Margin="15" materialDesign:HintAssist.Hint="Adresa" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
-        <TextBox Grid.Column="0" Grid.Row="1" FontSize="15" Margin="15" materialDesign:HintAssist.Hint="PIB" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+        <TextBox x:Name="brojFaktureTextBox" Grid.Column="0" Grid.Row="0" FontSize="15" Margin="15" materialDesign:HintAssist.Hint="Broj fakture" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+        <TextBox x:Name="idKlijentTextBox" Grid.Column="1" Grid.Row="0" FontSize="15" Margin="15" materialDesign:HintAssist.Hint="ID Klijent" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+        <TextBox x:Name="adresaTextBox" Grid.Column="2" Grid.Row="0" FontSize="15" Margin="15" materialDesign:HintAssist.Hint="Adresa" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+        <TextBox x:Name="pibTextBox" Grid.Column="0" Grid.Row="1" FontSize="15" Margin="15" materialDesign:HintAssist.Hint="PIB" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
 
-        <TextBox Grid.Column="1" Grid.Row="1"   FontSize="15" Margin="15" materialDesign:HintAssist.Hint="Popravka" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
-        <TextBox Grid.Column="2" Grid.Row="1"   FontSize="15" Margin="15" materialDesign:HintAssist.Hint="Opis" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+        <TextBox x:Name="popravkaTextBox" Grid.Column="1" Grid.Row="1"   FontSize="15" Margin="15" materialDesign:HintAssist.Hint="Popravka" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+        <TextBox x:Name="opisTextBox" Grid.Column="2" Grid.Row="1"   FontSize="15" Margin="15" materialDesign:HintAssist.Hint="Opis" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
         
         <CheckBox x:Name="Garancija" IsChecked="True" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center"  FontSize="15">
                 Grancija
@@ -47,15 +47,15 @@
 
             </ComboBox>
 
-        <TextBox Grid.Column="0" Grid.Row="3"   FontSize="15" Margin="15" materialDesign:HintAssist.Hint="Iznos recima" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
-        <TextBox Grid.Column="1" Grid.Row="3"   FontSize="15" Margin="15" materialDesign:HintAssist.Hint="Iznos" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+        <TextBox x:Name="iznosSlovimaTextBox" Grid.Column="0" Grid.Row="3"   FontSize="15" Margin="15" materialDesign:HintAssist.Hint="Iznos slovima" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+        <TextBox x:Name="iznosTextBox" Grid.Column="1" Grid.Row="3"   FontSize="15" Margin="15" materialDesign:HintAssist.Hint="Iznos" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
         <DatePicker x:Name="datumFakture" Grid.Row="3" Grid.Column="2" Margin="15,25,15,2" FontSize="15" materialDesign:HintAssist.Hint="Datum fakturisanja" Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />
 
         <Button Grid.Row="4" Grid.Column="2" Style="{StaticResource MaterialDesignRaisedAccentButton}" Width="100" ToolTip="Resource name: MaterialDesignRaisedAccentButton">
             SACUVAJ
         </Button>
 
-        <Button x:Name="ocistiDugme" Grid.Row="4" Grid.Column="1" Style="{StaticResource MaterialDesignRaisedButton}" Width="100" ToolTip="Resource name: MaterialDesignRaisedAccentButton">
+        <Button x:Name="ocistiDugme" Grid.Row="4" Grid.Column="1" Style="{StaticResource MaterialDesignRaisedButton}" Width="100" ToolTip="Resource name: MaterialDesignRaisedAccentButton" Click="OcistiDugme_Click">
             OCISTI
         </Button>
 

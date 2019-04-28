@@ -25,6 +25,25 @@ namespace ISElektroServis
             InitializeComponent();
         }
 
-        
+        public void ResetFields()
+        {
+            brojFaktureTextBox.Text = "";
+            idKlijentTextBox.Text = "";
+            adresaTextBox.Text = "";
+            pibTextBox.Text = "";
+            popravkaTextBox.Text = "";
+            opisTextBox.Text = "";
+            brojMeseci.Text = "";
+            iznosSlovimaTextBox.Text = "";
+            iznosTextBox.Text = "";
+            datumFakture.SelectedDate = null;
+
+
+        }
+
+        private void OcistiDugme_Click(object sender, RoutedEventArgs e)
+        {
+            ResetFields();
+        }
     }
 }
