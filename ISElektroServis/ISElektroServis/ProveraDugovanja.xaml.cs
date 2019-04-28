@@ -25,7 +25,17 @@ namespace ISElektroServis
             
         }
 
-       
+        private void OtkaziDugme_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void ProveriDugme_Click(object sender, RoutedEventArgs e)
+        {
+            odgovorProveraDugovanja.Visibility = Visibility.Visible;
+            upitProveraDugovanja.Visibility = Visibility.Hidden;
+            
+        }
 
 
     }
