@@ -169,7 +169,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="resursi\iselektroservis.chm" />
+    <None Include="resursi\ISElektroServis.chm" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -185,6 +185,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="icon_DHo_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resursi\Podesavanje Helpa.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

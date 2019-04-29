@@ -1,0 +1,2 @@
+﻿Help fajl ISElektroServis.chm za potrebe projekta nalazi u folderu resursi, ali prilikom instalacije programa
+ovaj fajl mora da se nalazi u C:\Program Files\ISElektroServis.

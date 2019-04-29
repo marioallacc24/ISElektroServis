@@ -121,7 +121,7 @@
                     </MenuItem>
                 </MenuItem>
             </MenuItem>
-            <MenuItem local:Help.Keyword="Dobrodosli" x:Name="Menu_Pomoc" Header="_Pomoc" Click="Menu_Pomoc_Click"/>
+            <MenuItem x:Name="Menu_Pomoc" Header="_Pomoc" Click="Menu_Pomoc_Click"/>
             <MenuItem x:Name="Menu_Izlaz" Header="_Izlaz" HorizontalAlignment="Right" Click="Menu_Izlaz_Click" />
         </Menu>
         
