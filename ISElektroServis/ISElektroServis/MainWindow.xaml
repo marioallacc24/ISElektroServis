@@ -33,7 +33,7 @@
                 </MenuItem>
             </MenuItem>
                 <MenuItem Header="_Popravka">
-                <MenuItem Header="_U izradi">
+                <MenuItem Header="_U izradi" Click="Menu_Home_Click">
                     <MenuItem.Icon>
                         <materialDesign:PackIcon
                             Kind="Hammer" />
@@ -93,7 +93,7 @@
                 </MenuItem>
             </MenuItem>
             <MenuItem Header="_Nabavka">
-                <MenuItem Header="_U izradi">
+                <MenuItem Header="_U izradi" Click="Menu_Home_Click">
                     <MenuItem.Icon>
                         <materialDesign:PackIcon
                             Kind="Hammer" />
