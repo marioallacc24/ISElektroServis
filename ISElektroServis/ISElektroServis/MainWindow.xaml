@@ -25,7 +25,7 @@
                
             <Menu IsMainMenu="True" Grid.Column="0" >
                 <MenuItem Header="_Prijem">
-                <MenuItem Header="_U izradi">
+                <MenuItem x:Name="Menu_Home" Header="_U izradi" Click="Menu_Home_Click">
                     <MenuItem.Icon>
                         <materialDesign:PackIcon
                             Kind="Hammer" />

@@ -93,6 +93,17 @@ namespace ISElektroServis
 
         }
 
+        private void Menu_Home_Click(object sender, RoutedEventArgs e)
+        {
+            SlikaLogo.Visibility = Visibility.Visible;
+
+
+            ListaFaktura.Visibility = Visibility.Hidden;
+            DodajKlijenta.Visibility = Visibility.Hidden;
+            ListaKlijenta.Visibility = Visibility.Hidden;
+            IzradaFakture.Visibility = Visibility.Hidden;
+        }
+
         private void Menu_Provera_dugovanja_Click(object sender, RoutedEventArgs e)
         {
             ProveraDugovanja proveraDugovanja = new ProveraDugovanja();
