@@ -101,27 +101,39 @@
                 </MenuItem>
             </MenuItem>
 
-            <MenuItem Header="_Prozor" >
-                <MenuItem Header="_Svetla tema"  x:Name="MenuSvetlaTema" Click="MenuSvetlaTema_Click">
-                    <MenuItem.Icon>
-                        <materialDesign:PackIcon
-                            Kind="CircleOutline" />
-                    </MenuItem.Icon>
-                </MenuItem>
 
-                <MenuItem x:Name="MenuTamnaTema" Header="_Tamna tema" Click="MenuTamnaTema_Click" >
+            <MenuItem x:Name="Menu_Pomoc" Header="_Pomoc">
+                <MenuItem Header="_Prozor" >
                     <MenuItem.Icon>
                         <materialDesign:PackIcon
-                            Kind="CircleSlice8" />
+                            Kind="WindowMaximize" />
                     </MenuItem.Icon>
-                </MenuItem>
-                <MenuItem Header="_Paleta boja">
-                    <MenuItem Header="_Plava">
-                        
+                    <MenuItem Header="_Svetla tema"  x:Name="MenuSvetlaTema" Click="MenuSvetlaTema_Click">
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon
+                            Kind="CircleOutline" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+
+                    <MenuItem x:Name="MenuTamnaTema" Header="_Tamna tema" Click="MenuTamnaTema_Click" >
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon
+                            Kind="CircleSlice8" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="_Paleta boja">
+                        <MenuItem Header="_Plava">
+
+                        </MenuItem>
                     </MenuItem>
                 </MenuItem>
+                <MenuItem Header="_O" Click="Menu_Pomoc_Click">
+                    <MenuItem.Icon>
+                        <materialDesign:PackIcon
+                            Kind="About" />
+                    </MenuItem.Icon>
+                </MenuItem>
             </MenuItem>
-            <MenuItem x:Name="Menu_Pomoc" Header="_Pomoc" Click="Menu_Pomoc_Click"/>
             <MenuItem x:Name="Menu_Izlaz" Header="_Izlaz" HorizontalAlignment="Right" Click="Menu_Izlaz_Click" />
         </Menu>
         

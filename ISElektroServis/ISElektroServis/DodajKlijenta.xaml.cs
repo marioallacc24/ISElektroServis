@@ -33,7 +33,7 @@ namespace ISElektroServis
             pibTextBox.Text = "";
             kontaktBrojTextBox.Text = "";
             emailTextBox.Text = "";
-            datumDodavanja.SelectedDate = null;
+            
            
 
 

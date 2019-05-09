@@ -41,9 +41,7 @@
                     <GridViewColumn
                         DisplayMemberBinding="{Binding Description}"
                         Header="Email" />
-                    <GridViewColumn
-                        DisplayMemberBinding="{Binding Description}"
-                        Header="Datum dodavanja" />
+                    
                     
 
                 </GridView>

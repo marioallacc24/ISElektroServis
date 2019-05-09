@@ -32,7 +32,7 @@ namespace ISElektroServis
 
         private void Menu_Pomoc_Click(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process.Start(@"C:\Users\EliteBook\Source\Repos\marioallacc24\ISElektroServis\ISElektroServis\ISElektroServis\resursi\ISElektroServis.chm");
+            System.Diagnostics.Process.Start(@"C:\Users\MarioPC\Source\Repos\marioallacc24\ISElektroServis\ISElektroServis\ISElektroServis\resursi\ISElektroServis.chm");
 
         }
 

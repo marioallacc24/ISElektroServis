@@ -28,8 +28,7 @@
 
         <TextBox x:Name="kontaktBrojTextBox" Grid.Column="1" Grid.Row="1"   FontSize="15" Margin="15" materialDesign:HintAssist.Hint="Kontakt broj" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
         <TextBox x:Name="emailTextBox" Grid.Column="2" Grid.Row="1"   FontSize="15" Margin="15" materialDesign:HintAssist.Hint="Email" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
-        <DatePicker x:Name="datumDodavanja" Grid.Row="2" Grid.Column="2" Margin="15,25,15,2" FontSize="15" materialDesign:HintAssist.Hint="Datum dodavanja" Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />
-
+        
         <Button Grid.Row="4" Grid.Column="2" Style="{StaticResource MaterialDesignRaisedAccentButton}" Width="100" ToolTip="Resource name: MaterialDesignRaisedAccentButton">
             SACUVAJ
         </Button>
