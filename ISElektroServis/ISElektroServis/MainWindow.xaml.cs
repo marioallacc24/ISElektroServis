@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,8 +33,9 @@ namespace ISElektroServis
 
         private void Menu_Pomoc_Click(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process.Start(@"C:\Users\MarioPC\Source\Repos\marioallacc24\ISElektroServis\ISElektroServis\ISElektroServis\resursi\ISElektroServis.chm");
+            System.Diagnostics.Process.Start(Directory.GetCurrentDirectory() + @"\iselektroservis.chm");
 
+           
         }
 
 
